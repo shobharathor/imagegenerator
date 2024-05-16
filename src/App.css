@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 100vh;
+  background: url('https://img.freepik.com/free-vector/tropical-leaves-background-zoom_23-2148580778.jpg?w=996&t=st=1715867143~exp=1715867743~hmac=1242d0682a3ca0af718506064a20219c46e8b64307ae34e3ef3b434dd4eb3848');
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .App-logo {
@@ -35,4 +44,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* custom */
+
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 0.5rem;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  font-size: 15px;
+  padding: 0.3rem 1rem;
+  background-color: rgb(247, 240, 241);
+  border: none;
+}
+
+button {
+  font-size: 15px;
+  padding: 0.3rem;
+  background-color: rgb(148, 244, 121);
+  color: rgb(8, 7, 7);
+  border: none;
 }
